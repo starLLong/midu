@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="midu-interface" />
+        <module name="midu-application" />
+        <module name="midu-domain" />
+        <module name="midu-web" />
+        <module name="midu-infrastructure" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="midu-app" target="1.8" />
+      <module name="midu-consumer" target="1.8" />
+      <module name="midu-serces" target="1.8" />
+      <module name="miduInterface" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="midu-application" options="-parameters" />
+      <module name="midu-domain" options="-parameters" />
+      <module name="midu-infrastructure" options="-parameters" />
+      <module name="midu-interface" options="-parameters" />
+      <module name="midu-web" options="-parameters" />
+    </option>
+  </component>
+</project>
